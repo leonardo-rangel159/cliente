@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cartórios</title>
+</head>
+
+<body>
+    <h1>Consulta de Cartórios</h1>
+
+    <form id="cartorioForm">
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione um estado</option>
+            
+        </select>
+
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade" required>
+            <option value="">Selecione uma cidade</option>
+            <!-- Cidades serão preenchidas pelo JavaScript -->
+        </select>
+
+        <button type="submit">Buscar Cartórios</button>
+    </form>
+
+    <h2>Cartórios</h2>
+    <ul id="cartoriosList"></ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
